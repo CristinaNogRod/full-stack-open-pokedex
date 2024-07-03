@@ -1,9 +1,10 @@
-import express, { static as expressStatic } from 'express'
+const express = require('express')
+const { static: expressStatic } = require('express')
 const app = express()
 require('dotenv').config()
 
 // get the port from env variable
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 
 app.use(expressStatic('dist'))
 
