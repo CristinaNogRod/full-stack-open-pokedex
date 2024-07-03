@@ -39,6 +39,9 @@ const App = () => {
     next = pokemonList.find(({ id }) => id === pokemonId + 1)
   }
 
+  // eslint-disable-next-line no-console
+  console.log('healthcheck')
+
   return (
     <Routes>
       <Route
